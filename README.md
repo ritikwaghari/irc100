@@ -35,8 +35,8 @@ async function main() {
   const instance = new IOST();
   instance.setRPC(rpc);
 
-  const account = new iost.Account("Input your name");
-  const kp = new KeyPair(bs58.decode("Your secret key"));
+  const account = new iost.Account(waghrimint);
+  const kp = new KeyPair(bs58.decode(3pHAKcUAEoWZt31W27Yvdehj8S5aBgTMPseZ61sq1QeBfosaoP3g4HkBLZ4HeKM3LoQwiR9pufmYFuaw6F83LCWf));
   account.addKeyPair(kp, "owner");
   account.addKeyPair(kp, "active");
   instance.setAccount(account);
